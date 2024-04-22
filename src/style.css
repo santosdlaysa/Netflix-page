@@ -151,3 +151,35 @@
         border-radius: 3px;
       }
       
+      .category{
+        height: 200px;
+
+      }
+
+      .category_title{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        line-height: 17px;
+  font-weight: 600;
+      }
+
+      section {
+        display: grid;
+        position: relative;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+      }
+
+      .item {
+        padding: 0 2px;
+        transition: 250ms all;
+      }
+
+      .itens-animation:hover{
+        transform: scale(1.1);
+      }
+      .item img{
+        max-width: 100%;
+        padding-right: 5px;
+      }
