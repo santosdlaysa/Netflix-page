@@ -164,6 +164,13 @@
   font-weight: 600;
       }
 
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 100%);
+        overflow: hidden;
+        scroll-behavior: smooth;
+      }
+
       section {
         display: grid;
         position: relative;
@@ -171,15 +178,17 @@
     margin: 20px 0;
       }
 
-      .item {
+      .itens {
         padding: 0 2px;
         transition: 250ms all;
       }
 
       .itens-animation:hover{
-        transform: scale(1.1);
+        margin: 0 40px;
+        transform: scale(1.2);
       }
-      .item img{
+
+      .item img {
         max-width: 100%;
         padding-right: 5px;
       }
