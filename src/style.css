@@ -9,7 +9,7 @@ body {
   background-color: black;
 }
 
-.app__background {
+.app_background {
   height: 100vh;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.9) 5%,
@@ -21,7 +21,7 @@ body {
   padding: 0.26rem 0.75rem 0 0.75rem;
 }
 
-.app__hero {
+.app_hero {
   width: 100%;
   margin: 0 auto;
   height: 100%;
@@ -37,25 +37,25 @@ body {
   width: 50%;
 }
 
-.banner__poster {
+.banner_poster {
   width: 450px;
   margin-top: 10rem;
 }
 
-.banner__subtitle {
+.banner_subtitle {
   font-size: 1.2vw;
   color: white;
   line-height: 1.25;
   padding: 1rem 13rem 0 0;
 }
 
-.banner__btn {
+.banner_btn {
   margin-top: 2rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.banner__btn--play {
+.banner_btn--play {
   padding: 0.6rem 2rem;
   margin-right: 0.75rem;
   font-weight: 600;
@@ -65,11 +65,11 @@ body {
   border: solid transparent;
 }
 
-.banner__btn--play:hover {
+.banner_btn--play:hover {
   background-color: rgba(255, 255, 255, 0.777);
 }
 
-.banner__btn--info {
+.banner_btn--info {
   color: white;
   padding: 0.6rem 2rem;
   margin-right: 0.75rem;
@@ -81,11 +81,11 @@ body {
   border: solid transparent;
 }
 
-.banner__btn--info:hover {
+.banner_btn--info:hover {
   background-color: rgba(109, 109, 110, 0.525);
 }
 
-.banner__btn i {
+.banner_btn i {
   margin-right: 0.5rem;
 }
 
@@ -96,23 +96,23 @@ header {
   align-items: center;
 }
 
-.header__logo img {
+.header_logo img {
   width: 5.8rem;
   cursor: pointer;
 }
 
-.header__menu {
+.header_menu {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   color: rgba(255, 255, 255, 0.697);
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   cursor: pointer;
   justify-content: space-between;
 }
 
-.header__menu ul {
+.header_menu ul {
   display: flex;
   list-style: none;
   align-items: center;
@@ -120,31 +120,31 @@ header {
   width: 100%;
 }
 
-.header__menu ul li {
+.header_menu ul li {
   padding-right: 0.9rem;
 }
 
-.header__menu--left ul li:hover {
+.header_menu--left ul li:hover {
   color: white;
 }
 
-.header__menu-right {
+.header_menu-right {
   color: white;
   font-size: 20px;
   margin-left: 70rem;
 
 }
 
-.header__menu-right ul li {
+.header_menu-right ul li {
   padding-right: 1.2rem;
 }
 
-.header__user {
+.header_user {
   display: flex;
   align-items: center;
 }
 
-.header__user img {
+.header_user img {
   width: 2rem;
   margin-right: 0.5rem;
   border-radius: 3px;
@@ -157,7 +157,7 @@ header {
 
 .category_title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 18px;
   margin-top: 3rem;
   line-height: 17px;
   font-weight: 600;
@@ -190,4 +190,111 @@ section {
 .item img {
   max-width: 100%;
   padding-right: 5px;
+}
+
+.arrow_btn {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: rgb(0, 0, 0);
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.arrow_btn i {
+  font-size: 2rem;
+  color: #ffffffa2;
+}
+
+.arrow_btn i:hover {
+  color: white;
+  transform: scale(1.15);
+}
+
+.arrow_btn:nth-of-type(1) {
+  top: -16px;
+  bottom: -10px;
+  left: 0;
+  background: linear-gradient(-90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+.arrow_btn:nth-of-type(2) {
+  top: -16px;
+  bottom: -10px;
+  right: 0;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+.social-links {
+  height: 25px;
+  width: 50%;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer-content {
+  margin: 20px auto;
+  color: grey;
+}
+
+.link-content_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5em;
+  color: grey;
+}
+
+.link-content_info ul {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  padding: initial;
+}
+
+.link-content_info ul li {
+  list-style: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.link-content_info ul li:hover {
+  text-decoration: underline;
+}
+
+.link-content_service {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.link-content_service-code {
+  background: 0 0;
+  color: grey;
+  border: solid 1px grey;
+  padding: 0.5rem;
+}
+
+.link-content_service-code:hover {
+  color: white;
+  border: solid 1px white;
+}
+
+.link-content_copyright {
+  font-size: 11px;
+  margin-bottom: 15px;
+  padding: 1rem 4px;
 }
